@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeinMC - Store</title>
+  	<link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #333);
+      color: #eee;
+      display: flex;
+      flex-direction: column; /* Changed from row to column */
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .store-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      flex: 1;
+    }
+    .item {
+      background: #444;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .item:hover {
+      background: #555;
+      transform: translateY(-5px);
+    }
+    .item img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .item h2 {
+      margin: 15px 0 10px;
+      font-size: 1.5rem;
+    }
+    .item p {
+      margin: 5px 0;
+      color: #ccc;
+    }
+    .buy-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .buy-btn:hover {
+      background: #45a049;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    img {
+    pointer-events: none;
+    user-select: none;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VeinMC Store</h1>
+    <p>Support the server by purchasing ranks and items!</p>
+  </header>
+
+  <div class="store-container">
+    <div class="item">
+      <img src="img/minecraft.jpg" alt="VIP Rank">
+      <h2>VIP Rank</h2>
+      <p>$5.00</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+
+    <div class="item">
+      <img src="img/minecraft.jpg" alt="MVP Rank">
+      <h2>MVP Rank</h2>
+      <p>$10.00</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+
+    <div class="item">
+      <img src="img/minecraft.jpg" alt="Legend Rank">
+      <h2>Legend Rank</h2>
+      <p>$20.00</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+  </div>
+
+  <footer>
+    Proudly made and powered by <a href="https://UltraElite90.netlify.app" target="_blank">UltraElite90</a>
+  </footer>
+</body>
+</html>

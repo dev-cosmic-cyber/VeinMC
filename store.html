@@ -5,88 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VeinMC - Store</title>
   	<link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/pop.css">
+    <link rel="stylesheet" href="css/store.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #1a1a1a, #333);
-      color: #eee;
-      display: flex;
-      flex-direction: column; /* Changed from row to column */
-      min-height: 100vh;
-    }
-    header {
-      text-align: center;
-      padding: 20px;
-      background: #222;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    .store-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 30px;
-      flex: 1;
-    }
-    .item {
-      background: #444;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-      transition: 0.3s;
-    }
-    .item:hover {
-      background: #555;
-      transform: translateY(-5px);
-    }
-    .item img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-    .item h2 {
-      margin: 15px 0 10px;
-      font-size: 1.5rem;
-    }
-    .item p {
-      margin: 5px 0;
-      color: #ccc;
-    }
-    .buy-btn {
-      display: inline-block;
-      margin-top: 10px;
-      background: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .buy-btn:hover {
-      background: #45a049;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #222;
-      font-size: 0.9rem;
-    }
-    footer a {
-      color: #4CAF50;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    img {
-    pointer-events: none;
-    user-select: none;
-    }
-
-  </style>
 </head>
 <body>
   <header>
@@ -99,26 +22,107 @@
       <img src="img/minecraft.jpg" alt="VIP Rank">
       <h2>VIP Rank</h2>
       <p>$5.00</p>
-      <a href="#" class="buy-btn">Buy Now</a>
+      <button class="buy-btn" onclick="openModal('modal1')">Buy</button>
     </div>
 
     <div class="item">
       <img src="img/minecraft.jpg" alt="MVP Rank">
       <h2>MVP Rank</h2>
       <p>$10.00</p>
-      <a href="#" class="buy-btn">Buy Now</a>
+      <button class="buy-btn" onclick="openModal('modal2')">Buy</button>
     </div>
 
     <div class="item">
       <img src="img/minecraft.jpg" alt="Legend Rank">
       <h2>Legend Rank</h2>
       <p>$20.00</p>
-      <a href="#" class="buy-btn">Buy Now</a>
+      <button class="buy-btn" onclick="openModal('modal3')">Buy</button>
     </div>
   </div>
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>Buy VIP Rank</h2>
+    <p>Send $5 to:</p>
+    <ul>
+      <li><strong>Bkash:</strong> 01639149865</li>
+    </ul>
+    <p><strong>Rules:</strong></p>
+    <ol>
+      <li>Send exactly $5.</li>
+      <li>Use your Minecraft username in the reference.</li>
+      <button onclick="window.open('https:/discord.com/channels/1387458915062648852/1393617277777346640', '_blank')">
+       🎫 Open Ticket on Discord
+      </button>
+      <li>Contact staff on Discord in 🎟️☞ticket channel to confirm.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h2>Buy MVP Rank</h2>
+    <p>Send $10 to:</p>
+    <ul>
+      <li><strong>Bkash:</strong> 01639149865</li>
+    </ul>
+    <p><strong>Rules:</strong></p>
+    <ol>
+      <li>Send exactly $10.</li>
+      <li>Use your Minecraft username in the reference.</li>
+      <button onclick="window.open('https:/discord.com/channels/1387458915062648852/1393617277777346640', '_blank')">
+       🎫 Open Ticket on Discord
+      </button>
+      <li>Contact staff on Discord in 🎟️☞ticket channel to confirm.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <h2>Buy Legend Rank</h2>
+    <p>Send $20 to:</p>
+    <ul>
+      <li><strong>Bkash:</strong> 01639149865</li>
+    </ul>
+    <p><strong>Rules:</strong></p>
+    <ol>
+      <li>Send exactly $20.</li>
+      <li>Use your Minecraft username in the reference.</li>
+      <button onclick="window.open('https:/discord.com/channels/1387458915062648852/1393617277777346640', '_blank')">
+       🎫 Open Ticket on Discord
+      </button>
+      <li>Contact staff on Discord in 🎟️☞ticket channel to confirm.</li>
+    </ol>
+  </div>
+</div>
+
 
   <footer>
     Proudly made and powered by <a href="https://UltraElite90.netlify.app" target="_blank">UltraElite90</a>
   </footer>
+
+  <script>
+   function openModal(id) {
+   document.getElementById(id).style.display = "flex";
+  }
+  function closeModal(id) {
+   document.getElementById(id).style.display = "none";
+  }
+  function openModal(id) {
+  document.getElementById(id).style.display = "flex";
+  document.body.style.overflow = "hidden";
+  }
+  function closeModal(id) {
+   document.getElementById(id).style.display = "none";
+   document.body.style.overflow = "auto";
+  }
+
+</script>
 </body>
 </html>

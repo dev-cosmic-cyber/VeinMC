@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeinMC - Donation</title>
+  <meta name="description" content="Support VeinMC by donating and help keep the server online.">
+  <meta property="og:title" content="VeinMC - Donation">
+  <meta property="og:site_name" content="VeinMC">
+  <meta property="og:description" content="Help us grow by donating to support the server.">
+  <meta property="og:image" content="https://vein-mc.netlify.app/img/donate.png">
+  <meta property="og:url" content="https://veinmc.fun/donation.html">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/premium.css">
+  <link rel="stylesheet" href="/css/pop.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Support VeinMC</h1>
+    <p>Your donations help us keep the server running, add new features, and improve gameplay for everyone!</p>
+  </header>
+
+  <div class="store-container">
+    <!-- One-time Donation -->
+    <div class="item">
+      <img src="/img/donate.png" alt="One-time Donation">
+      <h2>One-time Donation</h2>
+      <p>Any Amount</p>
+      <button class="buy-btn" onclick="openModal('modal1')">Donate</button>
+    </div>
+
+    <!-- Monthly Support -->
+    <div class="item">
+      <img src="/img/donate.png" alt="Monthly Support">
+      <h2>Monthly Support</h2>
+      <p>৳200 / ₹160</p>
+      <button class="buy-btn" onclick="openModal('modal2')">Donate</button>
+    </div>
+
+    <!-- Custom Support -->
+    <div class="item">
+      <img src="/img/donate.png" alt="Custom Donation">
+      <h2>Custom Support</h2>
+      <p>You Decide</p>
+      <button class="buy-btn" onclick="openModal('modal3')">Donate</button>
+    </div>
+  </div>
+
+  <!-- Modal 1 -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h2>One-time Donation</h2>
+      <p>Send your donation to:</p>
+      <ul>
+        <li><strong>Bkash:</strong> 01742915664</li>
+      </ul>
+      <p>After payment, please open a ticket on our Discord to confirm your donation.</p>
+      <button onclick="window.open('https://discord.com/channels/1387458915062648852/1393617277777346640', '_blank')">
+        🎫 Open Ticket on Discord
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h2>Monthly Support</h2>
+      <p>Send ৳200 / ₹160 monthly to:</p>
+      <ul>
+        <li><strong>Bkash:</strong> 01742915664</li>
+      </ul>
+      <p>We’ll recognize monthly supporters on Discord and in-game!</p>
+      <button onclick="window.open('https://discord.com/channels/1387458915062648852/1393617277777346640', '_blank')">
+        🎫 Open Ticket on Discord
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <h2>Custom Donation</h2>
+      <p>You can donate any amount you want.</p>
+      <ul>
+        <li><strong>Bkash:</strong> 01742915664</li>
+      </ul>
+      <p>Be sure to tell us your Minecraft username in the reference.</p>
+      <button onclick="window.open('https://discord.com/channels/1387458915062648852/1393617277777346640', '_blank')">
+        🎫 Open Ticket on Discord
+      </button>
+    </div>
+  </div>
+
+  <footer>
+    Proudly made and powered by <a href="https://UltraElite90.netlify.app" target="_blank">UltraElite90</a>
+  </footer>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "flex";
+      document.body.style.overflow = "hidden";
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  </script>
+</body>
+</html>

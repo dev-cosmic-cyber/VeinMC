@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeinMC - Store</title>
+  <meta name="description" content="Buy Ranks, Coins, and Support VeinMC through Donations.">
+  <meta property="og:title" content="VeinMC - Store">
+  <meta property="og:site_name" content="VeinMC">
+  <meta property="og:description" content="Get your rank, coins, and support VeinMC here.">
+  <meta property="og:image" content="https://vein-mc.netlify.app/img/store.png">
+  <meta property="og:url" content="https://veinmc.fun/store.html">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/stylesheet.css">
+  <link rel="stylesheet" href="../css/store.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>VeinMC Store</h1>
+    <p>Support the server by purchasing coin,ranks and items!</p>
+  </header>
+
+  <div class="container">
+    <div class="items">
+      <a href="coins.html" class="item">
+        <div>
+          <img src="../img/coins.png" alt="Coins icon" class="img">
+          <p class="title">Coins store</p>
+        </div>
+      </a>
+
+      <a href="ranks.html" class="item">
+        <div>
+          <img src="../img/rank.png" alt="Rank icon" class="img">
+          <p class="title">Rank store</p>
+        </div>
+      </a>
+
+      <a href="donation.html" class="item">
+        <div>
+          <img src="../img/donate.png" alt="Donation icon" class="img">
+          <p class="subtitle">support us by</p>
+          <p class="title">Donations</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    Proudly made and powered by
+    <a href="https://UltraElite90.netlify.app" target="_blank">UltraElite90</a>
+  </footer>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "flex";
+      document.body.style.overflow = "hidden";
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  </script>
+</body>
+</html>

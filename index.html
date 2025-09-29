@@ -26,6 +26,16 @@
 <body>
 	<div id="tsparticles"></div>
 
+	<section class="donation-leaderboard">
+    <h2>💎 Top Donators</h2>
+    <ul id="top-3"></ul>
+
+    <details>
+      <summary>Show More Donators</summary>
+      <ul id="others"></ul>
+      </details>
+    </section>
+
 	<div class="container">
 		<div class="logo">
 			<img src="img/logo.png" alt="VeinMC logo">
@@ -41,7 +51,7 @@
 			</a>
 
 			<!-- Replace # with your store URL -->
-			<a href="store.html" class="item">
+			<a href="pages/store.html" class="item">
 			<div>
 				<img src="img/store.png" alt="Minecraft store icon" class="img">
 				<p class="subtitle">donate on our</p>
@@ -50,7 +60,7 @@
 			</a>
 
 			<!-- Replace # with your vote URL -->
-			<a href="vote.html" class="item">
+			<a href="pages/vote.html" class="item">
 			<div>
 				<img src="img/vote.png" alt="Minecraft voting icon" class="img">
 				<p class="subtitle">support us by</p>
@@ -61,8 +71,8 @@
 		</div>
 
 		<div class="playercount" id="playercount">
-			<p>Join <span id="sip" data-ip="veinmc.fun" data-port="19133">
-			</span> other players on <span id="ip">veinmc.fun</span></p>
+			<p>Join <span id="sip" data-ip="play.veinmc.fun" data-port="19133">
+			</span> other players on <span id="ip">play.veinmc.fun</span></p>
 		</div>
 	</div>
 
@@ -76,5 +86,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/firefly.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script>
+	<script src="js/donation.js" type="text/javascript"></script>
 </body>
 </html>

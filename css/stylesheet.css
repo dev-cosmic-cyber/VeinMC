@@ -251,3 +251,37 @@ footer a {
     text-decoration: none;
     font-weight: bold;
 }
+
+.donation-leaderboard {
+  position: fixed;   /* Stays in the same spot */
+  top: 20px;         /* Distance from top */
+  left: 20px;        /* Distance from left */
+  width: 250px;
+  padding: 15px;
+  background: rgba(195, 220, 221, 0.6); /* Semi-transparent */
+  color: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+  z-index: 1000; /* Keep on top of other elements */
+}
+
+.donation-leaderboard h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.donation-leaderboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.donation-leaderboard li {
+  padding: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#top-3 li:nth-child(1) { color: gold; font-weight: bold; }
+#top-3 li:nth-child(2) { color: silver; font-weight: bold; }
+#top-3 li:nth-child(3) { color: #cd7f32; font-weight: bold; }

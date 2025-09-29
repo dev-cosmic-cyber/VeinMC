@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeinMC - Vote</title>
+	<link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #333);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .vote-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      flex: 1;
+    }
+    .site {
+      background: #444;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .site:hover {
+      background: #555;
+      transform: translateY(-5px);
+    }
+    .site img {
+      max-width: 80px;
+      margin-bottom: 10px;
+    }
+    .site h2 {
+      margin: 10px 0;
+      font-size: 1.5rem;
+    }
+    .vote-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .vote-btn:hover {
+      background: #45a049;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    img {
+    pointer-events: none; /* prevents drag/drop + right click on images */
+    user-select: none;    /* prevents selecting/copying */
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vote for VeinMC</h1>
+    <p>Support the server by voting on the sites below!</p>
+  </header>
+
+  <div class="vote-container">
+    <div class="site">
+      <img src="/img/vote.png" alt="Minecraft MP">
+      <h2>Minecraft-MP</h2>
+ <a href="https://minecraft-mp.com/server-s349101/vote/" target="_blank" class="vote-btn">Vote Now</a>
+    </div>
+
+    <div class="site">
+      <img src="/img/vote.png" alt="TopG">
+      <h2>TopG</h2>
+ <a href="https://topg.org/minecraft-servers/server-675968" target="_blank" class="vote-btn">Vote Now</a>
+    </div>
+
+    <div class="site">
+      <img src="/img/vote.png" alt="Planet Minecraft">
+      <h2>minecraft-serverlist</h2>
+ <a href="https://minecraft-serverlist.com/server/3316" target="_blank" class="vote-btn">Vote Now</a>
+    </div>
+  </div>
+
+  <footer>
+    Proudly made and powered by <a href="https://UltraElite90.netlify.app" target="_blank">UltraElite90</a>
+  </footer>
+</body>
+</html>
